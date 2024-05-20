@@ -1,0 +1,42 @@
+export const peopleData = [
+  {
+    image: "/images/people/nellynew.jpg",
+    name: "Nilesh Dhumal",
+    position: "Founder & Head Trainer",
+    location: "Off-Road Academies",
+    description: `Nilesh "Nelly" Dhumal, our co-founder, whose lifelong love for two wheels began with the humble bicycle. His illustrious career spans Downhill MTB racing, Bicycle Industry Consulting, and instructing in Off-Road Adventure Motorcycles. Nelly's diverse riding journey, rooted in BMX and Mountain Biking, includes over a decade of personal training for thousands of riders, uniquely equipping him to assess and skillfully guide riders to the next level be it bicycle or motorcycle. He pioneered structured training programs now embraced by renowned motorcycle brands, offering precise insights into riding mechanics and techniques. He's also recognized for training celebrities in India.`,
+    instalink: "https://www.instagram.com/_22nelly/",
+  },
+  {
+    image: "/images/people/aishwarya.jpg",
+    name: "Aishwarya Pissay",
+    position: "Founder & Head Trainer",
+    location: "Off-Road Academies",
+    description: `Aishwarya Pissay, the co-founder, and a trailblazing Indian motorsports athlete. As the first Indian to win a World Title, she's a seasoned circuit and off-road motorcycle racer, boasting multiple National titles in Road Racing and Rally Championships. Over the past six years, Aishwarya has passionately shared her expertise through training at TVS Road Racing Camps, guiding AOG Ladakh Tour participants, and empowering women at the Women Offroad TVS Training Camp. Her achievements and dedication underscore her prominent role in motorsports and training. (Add Instagram Icons  with Direct Links to their individual Insta pages )`,
+    instalink: "https://www.instagram.com/miss.pissay/",
+  },
+  {
+    image: "/images/people/sunny.jpg",
+    name: "Sunny Dhore",
+    position: "Founder & Head Trainer",
+    location: "Prodirt Adventure - Pune",
+    description: `Sunny is more than just an enduro enthusiast, always seeking the next thrilling trail, the next stunning vista, and the next opportunity to inspire others to embrace the exhilarating world of enduro riding. Whether you're a kid or a big kid, a newbie, or an expert, Sunny loves to train and share the joy of the ride. But that's not all - he loves to embark on epic bike voyages and even teach on KTM's India Tours.`,
+    instalink: "https://www.instagram.com/sunny_speedy/",
+  },
+  {
+    image: "/images/people/nitesh.jpg",
+    name: "Nitesh Chavan",
+    position: "Head Trainer",
+    location: "Prodirt Adventure - Pune",
+    description: `Nitesh is a motorcycle trainer and coach at ProDirt Adventure. He's dedicated seven years to Wushu, securing numerous national titles and excelling in professional MMA. Currently pursuing a career in boxing with an Olympic dream, Nitesh's expertise extends to imparting invaluable knowledge to fellow riders who share his passion for offroad adventures.`,
+    instalink: "https://www.instagram.com/kungfu_pilot/",
+  },
+  {
+    image: "/images/people/altaf.jpg",
+    name: "Altaf Khalifa",
+    position: "Founder & Head Trainer",
+    location: "MotoTrip Goa",
+    description: `Altaf our accomplished trainer from Goa, India, is an expert in Royal Enfield mechanics and customizations, renowned in the off-roading community. With a rich history of exploring Goa's hidden gems and participating in 'Raid the Himalaya,' he's your trusted guide to adventure. He's been a pivotal figure in Royal Enfield rides and is now co-founder of Mototrip.in, delivering authentic Indian experiences on two wheels.`,
+    instalink: "https://www.instagram.com/altaf3501/",
+  },
+];
