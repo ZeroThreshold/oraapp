@@ -22,7 +22,7 @@ export default function LocationsInfo({
   return (
     <div>
       <Image
-        className="object-cover w-full h-[44vh] md:h-p[65vh] lg:h-[94vh]"
+        className="object-cover w-full h-[44vh] md:h-p[65vh] lg:h-[75vh]"
         src={course?.img ?? ""}
         alt="AltImage"
         width={2000}
