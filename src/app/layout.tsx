@@ -19,9 +19,9 @@ export default function RootLayout({
       <body>
         <div className="fixed z-20 w-full">
           <Header />
-          <Notice />
+          {/* <Notice /> */}
         </div>
-        <main className="min-h-screen lg:pt-[5.82rem] pt-[6.5rem]">
+        <main className="min-h-screen lg:pt-[4rem] pt-[3.8rem]">
           {children}
         </main>
         <Footer />
