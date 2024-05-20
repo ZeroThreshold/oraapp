@@ -90,10 +90,10 @@
   }
 }
 
-.banner-carousel {
-  width: 100%;
+.banner-car {
+  width: 100vw;
   height: calc(100vh - 72px);
-  position: relative;
+  object-fit: cover;
   @media screen and (max-width: 430px) {
     height: 25vh;
   }
@@ -105,28 +105,6 @@
   }
   @media screen and (min-width: 1025px) and (max-width: 1440px) {
     height: 60vh;
-  }
-  .carousel-list {
-    height: 100%;
-  }
-  .carousel-list-item {
-    height: 100%;
-    position: relative;
-    .carousel-item-image {
-      img {
-        height: 100vh;
-        object-fit: cover;
-        width: 100%;
-      }
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
   }
 }
 
