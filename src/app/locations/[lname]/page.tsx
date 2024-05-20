@@ -4,6 +4,7 @@ import Logo from "@/components/common/logo";
 import { Button } from "@/components/ui/button";
 import { getLocationInfo } from "@/helpers/getLocationInfo";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LocationsInfo({
   params,
@@ -18,7 +19,7 @@ export default function LocationsInfo({
   return (
     <div className="my-12 container">
       <div className="flex items-center justify-center">
-        <Logo passString={locationData.varient} width={500} height={300} />
+        <Logo passString={locationData.varient} width={400} height={300} />
       </div>
       <div className="my-20">
         <h1 className="text-4xl font-bold mt-4">
@@ -54,9 +55,9 @@ export default function LocationsInfo({
                 <div className="font-bold text-xl mb-2">{course.title}</div>
                 <p className="text-gray-700 text-base">{course.description}</p>
               </div>
-              <div>
+              <Link href={`/locations/${params.lname}/${course.id}`}>
                 <Button className="gap-4 mt-4">Book Now</Button>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

@@ -2,6 +2,7 @@ export const locationsData = {
   prodirt_pune: {
     title: "ProDirt Adventure",
     active: true,
+    address: "Pro Dirt Adventure, Andra Dam Rd, Rajpuri, Maharashtra 412106",
     href: "/locations/prodirt-pune",
     logo: "/images/logos/prodirt-black.png",
     varient: "prodirtblack",
@@ -10,30 +11,122 @@ export const locationsData = {
       1: {
         title: "Clinic Level 1: Explore Adventure Trails Clinic",
         img: "/images/general/trials.jpeg",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 6500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        level: "Beginner",
+        trainingModules: [
+          "Body position - Seated & Standing riding postures for Off-road",
+          "Cornering techniques - loose grounds",
+          "Exercises to increase control and balance",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
       2: {
         title: "Clinic Level 2: Adventure Learning Day Clinic",
         img: "/images/general/learning.jpeg",
+        level: "Intermediate",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "none",
+            active: false,
+          },
+        },
+        pricing: {
+          private: {
+            price: 10500,
+            duration: "8 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 8500,
+            duration: "8 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Exercises to increase control and balance",
+          "Intermediate level trail riding drill",
+          "Use of electronic aids on your bike",
+          "Obstacles - Level 2",
+          "Recap of Level 1",
+          "Power-sliding",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
-      3: {
-        title: "Learn Off-Road Clinic",
-        img: "/images/general/offroad.jpeg",
-        description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
-      },
       4: {
-        title: "Level 1: Flat track training - Gears Not Included",
+        title: "Flat track training",
         img: "/images/general/trials.jpeg",
-        description:
-          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
-      },
-      5: {
-        title: "Level 2: Flat track training - Gears Included",
-        img: "/images/general/trials.jpeg",
+        level: "Beginner",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 5500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Body position - Seated riding postures for sliding a bike",
+          "Exercises to increase throttle control & vision",
+          "Efficient braking drills to increase traction",
+          "Technique of sliding",
+          "Practice session",
+          "Observation & feedback from trainers",
+        ],
         description:
           "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
       },
@@ -45,6 +138,7 @@ export const locationsData = {
     title: "TVS DRIFT-R",
     active: true,
     href: "/locations/driftr-pune",
+    address: "TVS driftR Adventure, Andra Dam Rd, Rajpuri, Maharashtra 412106",
     logo: "/images/logos/driftr-black.png",
     varient: "driftrblack",
     bannerImage: "/images/general/para1.jpg",
@@ -52,30 +146,122 @@ export const locationsData = {
       1: {
         title: "Clinic Level 1: Explore Adventure Trails Clinic",
         img: "/images/general/trials.jpeg",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 6500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        level: "Beginner",
+        trainingModules: [
+          "Body position - Seated & Standing riding postures for Off-road",
+          "Cornering techniques - loose grounds",
+          "Exercises to increase control and balance",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
       2: {
         title: "Clinic Level 2: Adventure Learning Day Clinic",
         img: "/images/general/learning.jpeg",
+        level: "Intermediate",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "none",
+            active: false,
+          },
+        },
+        pricing: {
+          private: {
+            price: 10500,
+            duration: "8 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 8500,
+            duration: "8 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Exercises to increase control and balance",
+          "Intermediate level trail riding drill",
+          "Use of electronic aids on your bike",
+          "Obstacles - Level 2",
+          "Recap of Level 1",
+          "Power-sliding",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
-      3: {
-        title: "Learn Off-Road Clinic",
-        img: "/images/general/offroad.jpeg",
-        description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
-      },
       4: {
-        title: "Level 1: Flat track training - Gears Not Included",
+        title: "Flat track training",
         img: "/images/general/trials.jpeg",
-        description:
-          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
-      },
-      5: {
-        title: "Level 2: Flat track training - Gears Included",
-        img: "/images/general/trials.jpeg",
+        level: "Beginner",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 5500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Body position - Seated riding postures for sliding a bike",
+          "Exercises to increase throttle control & vision",
+          "Efficient braking drills to increase traction",
+          "Technique of sliding",
+          "Practice session",
+          "Observation & feedback from trainers",
+        ],
         description:
           "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
       },
@@ -87,37 +273,130 @@ export const locationsData = {
     title: "MotoTrip.in",
     active: false,
     href: "#",
+    address: "Pro Dirt Adventure, Andra Dam Rd, Rajpuri, Maharashtra 412106",
     logo: "/images/logos/mototrip-black.png",
     varient: "mototripblack",
     bannerImage: "/images/general/para1.jpg",
     courses: {
       1: {
         title: "Clinic Level 1: Explore Adventure Trails Clinic",
-        img: "img1",
+        img: "/images/general/trials.jpeg",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 6500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        level: "Beginner",
+        trainingModules: [
+          "Body position - Seated & Standing riding postures for Off-road",
+          "Cornering techniques - loose grounds",
+          "Exercises to increase control and balance",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
       2: {
         title: "Clinic Level 2: Adventure Learning Day Clinic",
-        img: "img2",
+        img: "/images/general/learning.jpeg",
+        level: "Intermediate",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "none",
+            active: false,
+          },
+        },
+        pricing: {
+          private: {
+            price: 10500,
+            duration: "8 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 8500,
+            duration: "8 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Exercises to increase control and balance",
+          "Intermediate level trail riding drill",
+          "Use of electronic aids on your bike",
+          "Obstacles - Level 2",
+          "Recap of Level 1",
+          "Power-sliding",
+          "Techniques to ride inclines and declines",
+          "Hill recovery",
+          "Technique to lift a fallen bike",
+          "Efficient braking drills",
+          "Practice session",
+          "Observation and feedback from trainers",
+          "Trail ride",
+        ],
         description:
           "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
-      3: {
-        title: "Learn Off-Road Clinic",
-        img: "img3",
-        description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
-      },
       4: {
-        title: "Level 1: Flat track training - Gears Not Included",
-        img: "img1",
-        description:
-          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
-      },
-      5: {
-        title: "Level 2: Flat track training - Gears Included",
-        img: "img2",
+        title: "Flat track training",
+        img: "/images/general/trials.jpeg",
+        level: "Beginner",
+        batches: {
+          batch1: {
+            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+            active: true,
+          },
+          batch2: {
+            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
+            active: true,
+          },
+        },
+        pricing: {
+          private: {
+            price: 5500,
+            duration: "3 hours",
+            maxRiders: 4,
+          },
+          group: {
+            price: 4500,
+            duration: "3 hours",
+            maxRiders: 5,
+          },
+        },
+        trainingModules: [
+          "Body position - Seated riding postures for sliding a bike",
+          "Exercises to increase throttle control & vision",
+          "Efficient braking drills to increase traction",
+          "Technique of sliding",
+          "Practice session",
+          "Observation & feedback from trainers",
+        ],
         description:
           "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
       },
