@@ -92,8 +92,9 @@
 
 .banner-car {
   width: 100vw;
-  height: calc(100vh - 72px);
+  height: calc(100vh - 63px);
   object-fit: cover;
+
   @media screen and (max-width: 430px) {
     height: 25vh;
   }
