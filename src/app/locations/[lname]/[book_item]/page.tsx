@@ -1,3 +1,4 @@
+import BookNow from "@/components/blobs/locations/booknow";
 import FourOhFour from "@/components/blocks/FourOhFour";
 import NotActiveLocation from "@/components/blocks/notactivelocation";
 import { Button } from "@/components/ui/button";
@@ -40,7 +41,7 @@ export default function LocationsInfo({
               <span className="text-gray-500">{locationData?.address}</span>
             </div>
           </div>
-          <div className="flex flex-col lg:gap-6 gap-1">
+          {/* <div className="flex flex-col lg:gap-6 gap-1">
             <div className="text-2xl">
               Starts from{" "}
               <strong className="text-3xl">
@@ -48,7 +49,8 @@ export default function LocationsInfo({
               </strong>
             </div>
             <Button>Book Now</Button>
-          </div>
+          </div> */}
+          <BookNow course={course} locationData={locationData} />
         </div>
         <div>
           <h2 className="font-bold text-2xl">Event Details</h2>

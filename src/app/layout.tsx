@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/blocks/header";
-import Notice from "@/components/blocks/notice";
+// import Notice from "@/components/blocks/notice";
+import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/blocks/footer";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <main className="min-h-screen lg:pt-[4rem] pt-[3.8rem]">
           {children}
         </main>
+        <Toaster />
         <Footer />
       </body>
     </html>
