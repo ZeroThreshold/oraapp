@@ -102,7 +102,7 @@ export const locationsData = {
       },
       2: {
         title: "Intermediate Off-Road Clinic: Level 1",
-        img: "/images/general/trials.jpeg",
+        img: "/images/general/learning.jpeg",
         infoItems: [
           {
             question: "What i will learn?",
@@ -175,7 +175,7 @@ export const locationsData = {
       },
       3: {
         title: "Open Practice Session",
-        img: "/images/general/trials.jpeg",
+        img: "/images/general/exp.jpg",
         infoItems: [
           {
             question: "Who is eligible?",
@@ -231,7 +231,7 @@ export const locationsData = {
       },
       4: {
         title: "Kids Clinic",
-        img: "/images/general/trials.jpeg",
+        img: "/images/general/individualfeed.jpg",
         infoItems: [
           {
             question: "What will my kid learn and general eligibility?",
@@ -301,7 +301,7 @@ export const locationsData = {
       },
       5: {
         title: "Flat Track PRO Clinic",
-        img: "/images/general/trials.jpeg",
+        img: "/images/general/driftskid.jpg",
         infoItems: [
           {
             question: "What i will learn?",
