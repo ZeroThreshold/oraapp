@@ -1,10 +1,31 @@
 import BookNow from "@/components/blobs/locations/booknow";
 import FourOhFour from "@/components/blocks/FourOhFour";
 import NotActiveLocation from "@/components/blocks/notactivelocation";
-import { Button } from "@/components/ui/button";
 import { getCourseInfo } from "@/helpers/getLocationInfo";
-import { ArrowRight, ClockIcon, IndianRupee } from "lucide-react";
+import { ArrowRight, ClockIcon, Dot, IndianRupee } from "lucide-react";
 import Image from "next/image";
+
+interface Ride {
+  price: number;
+  duration: string;
+  maxRiders: number;
+  minRiders: number;
+}
+
+interface Pricing {
+  title: string;
+  prices: Ride[];
+}
+
+interface TimeBatch {
+  time: string;
+  active: boolean;
+}
+
+interface Batches {
+  title: string;
+  times: TimeBatch[];
+}
 
 export default function LocationsInfo({
   params,
@@ -41,113 +62,49 @@ export default function LocationsInfo({
               <span className="text-gray-500">{locationData?.address}</span>
             </div>
           </div>
-          {/* <div className="flex flex-col lg:gap-6 gap-1">
-            <div className="text-2xl">
-              Starts from{" "}
-              <strong className="text-3xl">
-                ₹ {course?.pricing.group.price}
-              </strong>
-            </div>
-            <Button>Book Now</Button>
-          </div> */}
           <BookNow course={course} locationData={locationData} />
         </div>
         <div>
-          <h2 className="font-bold text-2xl">Event Details</h2>
+          <h2 className="font-bold text-2xl">Course Details</h2>
           <p className="mt-2">{course?.description}</p>
           <div className="flex justify-between flex-col lg:flex-row">
             <div className="my-10 flex flex-col gap-5 max-w-3xl">
-              <div>
-                <h3 className="font-semibold text-xl">What i will learn?</h3>
-                <ul className="flex flex-col gap-2 mt-2">
-                  {course?.trainingModules.map((module, index) => (
-                    <li
-                      key={index}
-                      className="text-gray-500 font-medium flex gap-2"
-                    >
-                      <ArrowRight /> {module}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-xl">Things to carry</h3>
-                <p className="mt-2 text-gray-500 font-medium ">
-                  {" "}
-                  Riders carry their own safety gear which suits them best,
-                  Riding jackets &amp; Pants, Helmets, Gloves, and Boots are
-                  compulsory, Knee, Elbow &amp; Chest Guards are mandatory.
-                  Refillable water bottle or hydration bag.{" "}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-xl">Inclusions</h3>
-                <ul className="flex flex-col gap-2 mt-2">
-                  <li className="text-gray-500 font-medium flex gap-2">
-                    <ArrowRight /> Training Session
-                  </li>
-                  <li className="text-gray-500 font-medium flex gap-2">
-                    <ArrowRight /> A professional & knowledgeable instructor.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-xl">Exclusions</h3>
-                <ul className="flex flex-col gap-2 mt-2">
-                  <li className="text-gray-500 font-medium flex gap-2">
-                    <ArrowRight /> Anything other than inclusions.
-                  </li>
-                </ul>
-              </div>
+              {course.infoItems.map(
+                (
+                  item: {
+                    question: string;
+                    info: string[] | string;
+                    listItem: boolean;
+                  },
+                  index
+                ) => {
+                  return (
+                    <div key={index}>
+                      <h3 className="font-semibold text-xl">{item.question}</h3>
+                      {item.listItem &&
+                        Array.isArray(item.info) &&
+                        item.info.map((info, index) => (
+                          <li
+                            key={index}
+                            className="text-gray-500 font-medium flex gap-2 my-[0.35rem]"
+                          >
+                            <ArrowRight /> {info}
+                          </li>
+                        ))}
+                      {!item.listItem && (
+                        <p className="mt-2 text-gray-500 font-medium ">
+                          {item.info}
+                        </p>
+                      )}
+                    </div>
+                  );
+                }
+              )}
             </div>
-            <div className="h-96 w-full rounded-md shadow border border-neutral-100 max-w-[26rem] mt-10 p-4 flex flex-col gap-6">
-              <div className="">
-                <h3 className="text-2xl font-[550]">Duration</h3>
-                <div>
-                  <h4 className="text-base font-medium text-gray-500">
-                    Batch 1
-                  </h4>
-                  {course?.batches.batch1.active && (
-                    <div className="mt-1 flex font-[550] items-center gap-4">
-                      <ClockIcon className="w-6 h-6" />
-                      {course?.batches.batch1.time}
-                    </div>
-                  )}
-                </div>
-                {course?.batches.batch2.active && (
-                  <div>
-                    <h4 className="text-base font-medium text-gray-500">
-                      Batch 2
-                    </h4>
-                    <div className="mt-1 flex font-[550] items-center gap-4">
-                      <ClockIcon className="w-6 h-6" />{" "}
-                      {course?.batches.batch2.time}
-                    </div>
-                  </div>
-                )}
-              </div>
-              <div>
-                <h3 className="text-2xl font-[550]">Pricing</h3>
-                <div>
-                  <h4 className="text-base font-medium text-gray-500">
-                    Private:
-                  </h4>
-                  <div className="mt-1 flex font-[550]">
-                    <IndianRupee className="w-4" />{" "}
-                    {course?.pricing.private.price}/- Max{" "}
-                    {course?.pricing.private.maxRiders} Riders
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-base font-medium text-gray-500">
-                    Group:
-                  </h4>
-                  <div className="mt-1 flex font-[550]">
-                    <IndianRupee className="w-4" />{" "}
-                    {course?.pricing.group.price}/- Max{" "}
-                    {course?.pricing.group.maxRiders} Riders
-                  </div>
-                </div>
+            <div className="w-full max-w-[26rem] mt-10">
+              <div className="rounded-md shadow border p-4 border-neutral-100 flex flex-col gap-6">
+                <BatchTimings batches={course.batches} />
+                <PricingComp pricing={course.pricelist} />
               </div>
             </div>
           </div>
@@ -156,3 +113,63 @@ export default function LocationsInfo({
     </div>
   );
 }
+
+const BatchTimings = ({ batches }: { batches: Batches[] }) => {
+  return (
+    <div>
+      <h3 className="text-2xl font-[550]">Duration</h3>
+      {batches.map((batch, index) => {
+        return (
+          <div key={index}>
+            <h4 className="text-base font-medium text-gray-500">
+              {batch.title}
+            </h4>
+            {batch.times.map((time, index) => {
+              return (
+                <div
+                  className="mt-1 flex font-[550] items-center gap-3"
+                  key={index}
+                >
+                  <ClockIcon className="w- h-6" />
+                  {time.time}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const PricingComp = ({ pricing }: { pricing: Pricing[] }) => {
+  return (
+    <div>
+      <h3 className="text-2xl font-[550]">Pricing</h3>
+      {pricing.map((price, index) => {
+        return (
+          <div key={index}>
+            <h4 className="text-base font-medium text-gray-500">
+              {price.title}:
+            </h4>
+            <ul>
+              {price.prices.map((price, index) => (
+                <li className="mt-1 flex flex-col font-[550]" key={index}>
+                  <div className="flex">
+                    <Dot />
+                    <IndianRupee className="w-4" /> {price.price}/- per rider
+                    {price.maxRiders !== -1 &&
+                      `, Max: ${price.maxRiders} Riders`}
+                    {price.minRiders !== -1 &&
+                      `, Min: ${price.minRiders} Riders`}
+                  </div>
+                  <div className="ml-10">Duration: {price.duration}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
+  );
+};

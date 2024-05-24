@@ -14,6 +14,34 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 
+interface Price {
+  price: number;
+  duration: string;
+  minRiders: number;
+  maxRiders: number;
+}
+
+interface PriceList {
+  title: string;
+  prices: Price[];
+}
+
+const findMinPrice = (pricelist: PriceList[]) => {
+  let leastPrice = 0;
+
+  for (const price of pricelist) {
+    const minPrice = Math.min(...price.prices.map((p) => p.price));
+
+    if (leastPrice === 0) {
+      leastPrice = minPrice;
+    } else {
+      leastPrice = Math.min(leastPrice, minPrice);
+    }
+  }
+
+  return leastPrice;
+};
+
 const BookNow = ({
   course,
   locationData,
@@ -27,6 +55,8 @@ const BookNow = ({
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
   const [soloGroup, setSoloGroup] = useState("Private");
+
+  const leastprice = findMinPrice(course.pricelist);
 
   const handleSubmit = async () => {
     const body = {
@@ -67,8 +97,7 @@ const BookNow = ({
     <>
       <div className="flex flex-col lg:gap-6 gap-1">
         <div className="text-2xl">
-          Starts from{" "}
-          <strong className="text-3xl">₹ {course?.pricing.group.price}</strong>
+          Starts from <strong className="text-3xl">₹ {leastprice}</strong>
         </div>
         <Button onClick={() => setIsOpen((prev) => !prev)}>Book Now</Button>
       </div>

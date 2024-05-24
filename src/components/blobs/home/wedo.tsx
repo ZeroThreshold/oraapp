@@ -38,7 +38,7 @@ const WeDo = () => {
                 )}
 
                 <div className="flex flex-col justify-center gap-7">
-                  <h2 className="text-4xl lg:text-6xl font-bold">
+                  <h2 className="text-4xl lg:text-5xl font-bold">
                     {item.title}
                   </h2>
                   <p>{item.description}</p>

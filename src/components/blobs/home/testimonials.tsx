@@ -2,9 +2,9 @@
 import { InstagramEmbed } from "react-social-media-embed";
 
 const linksinsta = [
+  "https://www.instagram.com/p/C6_VuCChQ4B/",
+  "https://www.instagram.com/p/C6n5JiAt_Np/",
   "https://www.instagram.com/p/CyNhXSoL2sf/",
-  "https://www.instagram.com/p/CvMnaT4h7vM/",
-  "https://www.instagram.com/p/CslBN5bPQm8/",
   "https://www.instagram.com/p/CpxRXFgNc-T/",
   "https://www.instagram.com/p/C2bvzqSreB_/",
   "https://www.instagram.com/p/C5Dhjz-L4wa/",

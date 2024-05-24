@@ -1,3 +1,5 @@
+import { act } from "react";
+
 export const locationsData = {
   prodirt_pune: {
     title: "ProDirt Adventure",
@@ -9,126 +11,372 @@ export const locationsData = {
     bannerImage: "/images/general/collage1.jpg",
     courses: {
       1: {
-        title: "Clinic Level 1: Explore Adventure Trails Clinic",
+        title: "Off-Road Introduction Clinic: (Beginner)",
         img: "/images/general/trials.jpeg",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Recap of/ Introduction Clinic",
+              "Exercises to increase control and balance",
+              "Brake/Throttle/ Clutch Control",
+              "Intermediate-level trail riding drill",
+              "Use of electronic aids on your bike",
+              "Obstacles - Level 2",
+              "Techniques to ride Inclines & Declines",
+              "Hill Recovery",
+              "How to lift a fallen bike",
+              "Efficient Braking Drills",
+              "Trail Ride",
+              "Power-sliding (Optional if the coach feels you are ready)",
+            ],
           },
-          batch2: {
-            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
-            active: true,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 6500,
-            duration: "3 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
-          },
-        },
-        level: "Beginner",
-        trainingModules: [
-          "Body position - Seated & Standing riding postures for Off-road",
-          "Cornering techniques - loose grounds",
-          "Exercises to increase control and balance",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
         ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 12500,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+              {
+                price: 10000,
+                duration: "Half Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 7500,
+                duration: "Half Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
+        ],
+        level: "Beginner",
         description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
+          "Geared towards beginners, this course covers essential skills such as body positioning, throttle control, braking, and obstacle negotiation. Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
       },
       2: {
-        title: "Clinic Level 2: Adventure Learning Day Clinic",
-        img: "/images/general/learning.jpeg",
-        level: "Intermediate",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        title: "Intermediate Off-Road Clinic: Level 1",
+        img: "/images/general/trials.jpeg",
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Recap of/ Introduction Clinic",
+              "Exercises to increase control and balance",
+              "Brake/Throttle/ Clutch Control",
+              "Intermediate-level trail riding drill",
+              "Use of electronic aids on your bike",
+              "Obstacles - Level 2",
+              "Techniques to ride Inclines & Declines",
+              "Hill Recovery",
+              "How to lift a fallen bike",
+              "Efficient Braking Drills",
+              "Trail Ride",
+              "Power-sliding (Optional if the coach feels you are ready)",
+            ],
           },
-          batch2: {
-            time: "none",
-            active: false,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 10500,
-            duration: "8 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 8500,
-            duration: "8 hours",
-            maxRiders: 5,
-          },
-        },
-        trainingModules: [
-          "Exercises to increase control and balance",
-          "Intermediate level trail riding drill",
-          "Use of electronic aids on your bike",
-          "Obstacles - Level 2",
-          "Recap of Level 1",
-          "Power-sliding",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
         ],
+        batches: [
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 15000,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 12500,
+                duration: "Full Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
+        ],
+        level: "Intermediate",
         description:
-          "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
+          "These courses build upon foundational skills and introduce riders to more challenging terrain, inclines, declines, and technical maneuvers. A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
+      },
+      3: {
+        title: "Open Practice Session",
+        img: "/images/general/trials.jpeg",
+        infoItems: [
+          {
+            question: "Who is eligible?",
+            listItem: false,
+            info: "Open to members, athletes, and riders who have completed at least an introductory course with us. Enjoy track time at your own pace, allowing you to focus on the areas you want to improve.",
+          },
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own motor cycle and safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
+          },
+        ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Single Session Pass",
+            prices: [
+              {
+                price: 3500,
+                duration: "Half/Full",
+                minRiders: -1,
+                maxRiders: -1,
+              },
+            ],
+          },
+        ],
+        level: "Intermediate",
+        description:
+          "Our Open Practice Sessions are designed for riders who are members, athletes, or those who have completed at least an introductory course with us anywhere in India. These sessions provide track time for riders to practice at their own pace in a supportive and controlled environment. Whether you're looking to refine your skills, prepare for an upcoming event, or simply enjoy some time on the track, our Open Practice Sessions offer the perfect opportunity.",
       },
       4: {
-        title: "Flat track training",
+        title: "Kids Clinic",
         img: "/images/general/trials.jpeg",
-        level: "Beginner",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What will my kid learn and general eligibility?",
+            listItem: true,
+            info: [
+              "Age Group: Suitable for children aged 6-14 years.",
+              "Skill Development: Focus on basic riding skills, balance, coordination, and control.",
+              "Safety Education: Emphasizes the importance of safety gear, road rules, and responsible riding.",
+              "Fun and Engaging: Interactive and fun activities to keep kids engaged and excited about learning.",
+              "Professional Instructors: Trained instructors with experience in teaching children, ensuring a supportive and safe learning environment.",
+            ],
           },
-          batch2: {
-            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
-            active: true,
-          },
-        },
-        pricing: {
-          private: {
-            price: 5500,
-            duration: "3 hours",
-            maxRiders: 4,
-          },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
-          },
-        },
-        trainingModules: [
-          "Body position - Seated riding postures for sliding a bike",
-          "Exercises to increase throttle control & vision",
-          "Efficient braking drills to increase traction",
-          "Technique of sliding",
-          "Practice session",
-          "Observation & feedback from trainers",
         ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Half Day Per Session",
+            prices: [
+              {
+                price: 10000,
+                duration: "Half Day",
+                minRiders: -1,
+                maxRiders: -1,
+              },
+            ],
+          },
+          {
+            title: "Full Day Per Session",
+            prices: [
+              {
+                price: 15000,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: -1,
+              },
+            ],
+          },
+          {
+            title: "Bike Rental 85 cc Yamaha",
+            prices: [
+              {
+                price: 5000,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: -1,
+              },
+            ],
+          },
+        ],
+        level: "Beginner/Introduction",
         description:
-          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
+          "Our Kids Training Program is designed to introduce children to the exciting world of motorcycling at an early stage. This program aims to build confidence, develop riding skills, and instill a sense of responsibility in young riders, preparing them to become future athletes or safe and responsible citizens on public roads.",
+      },
+      5: {
+        title: "Flat Track PRO Clinic",
+        img: "/images/general/trials.jpeg",
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Introduction to Sliding Techniques",
+              "Safety Precautions",
+              "Understanding Motorcycle Dynamics",
+              "Fundamentals of Sliding",
+              "Body Positioning",
+              "Throttle and Brake Control",
+              "Initiating a Slide",
+              "Maintaining a Slide",
+              "Recovering from a Slide",
+              "Common Mistakes and How to Avoid Them",
+            ],
+          },
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
+          },
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
+          },
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: [
+              "Training Session.",
+              "A professional & knowledgeable instructor.",
+            ],
+          },
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
+        ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 10500,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+        ],
+        level: "PRO",
+        description:
+          "Learn The Art of Sliding a Motorcycle. This program is focused on the fundamentals of sliding a motorcycle in a controlled environment. The trainers break down the sliding technique and provide you with the knowledge that even experienced riders have yet to figure out",
       },
     },
     description:
@@ -146,41 +394,85 @@ export const locationsData = {
       1: {
         title: "Clinic Level 1: Explore Adventure Trails Clinic",
         img: "/images/general/trials.jpeg",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Body position - Seated & Standing riding postures for Off-road",
+              "Cornering techniques - loose grounds",
+              "Exercises to increase control and balance",
+              "Techniques to ride inclines and declines",
+              "Hill recovery",
+              "Technique to lift a fallen bike",
+              "Efficient braking drills",
+              "Practice session",
+              "Observation and feedback from trainers",
+              "Trail ride",
+            ],
           },
-          batch2: {
-            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
-            active: true,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 6500,
-            duration: "3 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: ["Any professional questions or help."],
           },
-        },
-        level: "Beginner",
-        trainingModules: [
-          "Body position - Seated & Standing riding postures for Off-road",
-          "Cornering techniques - loose grounds",
-          "Exercises to increase control and balance",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
         ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 6500,
+                duration: "Half Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 4500,
+                duration: "Half Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
+        ],
+        level: "Beginner",
         description:
           "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
       },
@@ -188,42 +480,85 @@ export const locationsData = {
         title: "Clinic Level 2: Adventure Learning Day Clinic",
         img: "/images/general/learning.jpeg",
         level: "Intermediate",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Exercises to increase control and balance",
+              "Intermediate level trail riding drill",
+              "Use of electronic aids on your bike",
+              "Obstacles - Level 2",
+              "Recap of Level 1",
+              "Power-sliding",
+              "Techniques to ride inclines and declines",
+              "Hill recovery",
+              "Technique to lift a fallen bike",
+              "Efficient braking drills",
+              "Practice session",
+              "Observation and feedback from trainers",
+              "Trail ride",
+            ],
           },
-          batch2: {
-            time: "none",
-            active: false,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 10500,
-            duration: "8 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 8500,
-            duration: "8 hours",
-            maxRiders: 5,
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: [
+              "Free range of the track.",
+              "Any professional questions or help.",
+            ],
           },
-        },
-        trainingModules: [
-          "Exercises to increase control and balance",
-          "Intermediate level trail riding drill",
-          "Use of electronic aids on your bike",
-          "Obstacles - Level 2",
-          "Recap of Level 1",
-          "Power-sliding",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
+        ],
+        batches: [
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 10500,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 8500,
+                duration: "Full Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
         ],
         description:
           "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
@@ -232,35 +567,82 @@ export const locationsData = {
         title: "Flat track training",
         img: "/images/general/trials.jpeg",
         level: "Beginner",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Body position - Seated riding postures for sliding a bike",
+              "Exercises to increase throttle control & vision",
+              "Efficient braking drills to increase traction",
+              "Technique of sliding",
+              "Practice session",
+              "Observation & feedback from trainers",
+            ],
           },
-          batch2: {
-            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
-            active: true,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 5500,
-            duration: "3 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: [
+              "Free range of the track.",
+              "Any professional questions or help.",
+            ],
           },
-        },
-        trainingModules: [
-          "Body position - Seated riding postures for sliding a bike",
-          "Exercises to increase throttle control & vision",
-          "Efficient braking drills to increase traction",
-          "Technique of sliding",
-          "Practice session",
-          "Observation & feedback from trainers",
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
+        ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 5500,
+                duration: "Half Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 4500,
+                duration: "Half Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
         ],
         description:
           "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
@@ -279,126 +661,277 @@ export const locationsData = {
     bannerImage: "/images/general/para1.jpg",
     courses: {
       1: {
-        title: "Clinic Level 1: Explore Adventure Trails Clinic",
+        title: "Off-Road Introduction Clinic: (Beginner)",
         img: "/images/general/trials.jpeg",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Recap of/ Introduction Clinic",
+              "Exercises to increase control and balance",
+              "Brake/Throttle/ Clutch Control",
+              "Intermediate-level trail riding drill",
+              "Use of electronic aids on your bike",
+              "Obstacles - Level 2",
+              "Techniques to ride Inclines & Declines",
+              "Hill Recovery",
+              "How to lift a fallen bike",
+              "Efficient Braking Drills",
+              "Trail Ride",
+              "Power-sliding (Optional if the coach feels you are ready)",
+            ],
           },
-          batch2: {
-            time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
-            active: true,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 6500,
-            duration: "3 hours",
-            maxRiders: 4,
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
           },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: [
+              "Free range of the track.",
+              "Any professional questions or help.",
+            ],
           },
-        },
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
+        ],
+
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 12500,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+              {
+                price: 10000,
+                duration: "Half Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 7500,
+                duration: "Half Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
+        ],
         level: "Beginner",
         trainingModules: [
-          "Body position - Seated & Standing riding postures for Off-road",
+          "Body position - seated and standing riding postures for Off-road",
           "Cornering techniques - loose grounds",
           "Exercises to increase control and balance",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
+          "Techniques to ride Inclines & Declines",
+          "Hill Recovery",
+          "How to lift a fallen bike",
+          "Efficient Braking Drills",
+          "Trail Ride",
         ],
         description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
+          "Geared towards beginners, this course covers essential skills such as body positioning, throttle control, braking, and obstacle negotiation. Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
       },
       2: {
-        title: "Clinic Level 2: Adventure Learning Day Clinic",
-        img: "/images/general/learning.jpeg",
+        title: "Intermediate Off-Road Clinic: Level 1",
+        img: "/images/general/trials.jpeg",
+        infoItems: [
+          {
+            question: "What i will learn?",
+            listItem: true,
+            info: [
+              "Recap of/ Introduction Clinic",
+              "Exercises to increase control and balance",
+              "Brake/Throttle/ Clutch Control",
+              "Intermediate-level trail riding drill",
+              "Use of electronic aids on your bike",
+              "Obstacles - Level 2",
+              "Techniques to ride Inclines & Declines",
+              "Hill Recovery",
+              "How to lift a fallen bike",
+              "Efficient Braking Drills",
+              "Trail Ride",
+              "Power-sliding (Optional if the coach feels you are ready)",
+            ],
+          },
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
+          },
+          {
+            question:
+              "Which bike I can Bring? OR Suitable Bikes for this Program?",
+            listItem: false,
+            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
+          },
+          {
+            question: "Inclusions",
+            listItem: true,
+            info: [
+              "Free range of the track.",
+              "Any professional questions or help.",
+            ],
+          },
+          {
+            question: "Exclusions",
+            listItem: true,
+            info: ["Anything other than inclusions."],
+          },
+        ],
+
+        batches: [
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Private",
+            prices: [
+              {
+                price: 15000,
+                duration: "Full Day",
+                minRiders: -1,
+                maxRiders: 4,
+              },
+            ],
+          },
+          {
+            title: "Group",
+            prices: [
+              {
+                price: 12500,
+                duration: "Full Day",
+                maxRiders: -1,
+                minRiders: 5,
+              },
+            ],
+          },
+        ],
         level: "Intermediate",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
-            active: true,
-          },
-          batch2: {
-            time: "none",
-            active: false,
-          },
-        },
-        pricing: {
-          private: {
-            price: 10500,
-            duration: "8 hours",
-            maxRiders: 4,
-          },
-          group: {
-            price: 8500,
-            duration: "8 hours",
-            maxRiders: 5,
-          },
-        },
         trainingModules: [
+          "Recap of/ Introduction Clinic",
           "Exercises to increase control and balance",
-          "Intermediate level trail riding drill",
+          "Brake/Throttle/ Clutch Control",
+          "Intermediate-level trail riding drill",
           "Use of electronic aids on your bike",
           "Obstacles - Level 2",
-          "Recap of Level 1",
-          "Power-sliding",
-          "Techniques to ride inclines and declines",
-          "Hill recovery",
-          "Technique to lift a fallen bike",
-          "Efficient braking drills",
-          "Practice session",
-          "Observation and feedback from trainers",
-          "Trail ride",
+          "Techniques to ride Inclines & Declines",
+          "Hill Recovery",
+          "How to lift a fallen bike",
+          "Efficient Braking Drills",
+          "Trail Ride",
+          "Power-sliding (Optional if the coach feels you are ready)",
         ],
         description:
-          "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
+          "These courses build upon foundational skills and introduce riders to more challenging terrain, inclines, declines, and technical maneuvers. A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
       },
-      4: {
-        title: "Flat track training",
+      3: {
+        title: "Open Practice Session",
         img: "/images/general/trials.jpeg",
-        level: "Beginner",
-        batches: {
-          batch1: {
-            time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
-            active: true,
+        infoItems: [
+          {
+            question: "Who is eligible?",
+            listItem: false,
+            info: "Open to members, athletes, and riders who have completed at least an introductory course with us. Enjoy track time at your own pace, allowing you to focus on the areas you want to improve.",
           },
-          batch2: {
-            time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
-            active: true,
+          {
+            question: "Things to carry",
+            listItem: false,
+            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
-        },
-        pricing: {
-          private: {
-            price: 5500,
-            duration: "3 hours",
-            maxRiders: 4,
-          },
-          group: {
-            price: 4500,
-            duration: "3 hours",
-            maxRiders: 5,
-          },
-        },
-        trainingModules: [
-          "Body position - Seated riding postures for sliding a bike",
-          "Exercises to increase throttle control & vision",
-          "Efficient braking drills to increase traction",
-          "Technique of sliding",
-          "Practice session",
-          "Observation & feedback from trainers",
         ],
+        batches: [
+          {
+            title: "Half Day",
+            times: [
+              {
+                time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+              {
+                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                active: true,
+              },
+            ],
+          },
+          {
+            title: "Full Day",
+            times: [
+              {
+                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
+                active: true,
+              },
+            ],
+          },
+        ],
+        pricelist: [
+          {
+            title: "Single Session Pass",
+            prices: [
+              {
+                price: 3500,
+                duration: "Half/Full",
+                minRiders: -1,
+                maxRiders: -1,
+              },
+            ],
+          },
+        ],
+        level: "Intermediate",
         description:
-          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time",
+          "Our Open Practice Sessions are designed for riders who are members, athletes, or those who have completed at least an introductory course with us anywhere in India. These sessions provide track time for riders to practice at their own pace in a supportive and controlled environment. Whether you're looking to refine your skills, prepare for an upcoming event, or simply enjoy some time on the track, our Open Practice Sessions offer the perfect opportunity.",
       },
     },
     description:
