@@ -1,5 +1,3 @@
-import { act } from "react";
-
 export const locationsData = {
   prodirt_pune: {
     title: "ProDirt Adventure",
