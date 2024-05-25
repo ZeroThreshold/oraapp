@@ -75,10 +75,6 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Montserrat", sans-serif;
-    -webkit-perspective: 0px !important;
-    perspective: 0px !important;
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
   }
   html {
     overflow: scroll;

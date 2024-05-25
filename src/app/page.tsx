@@ -11,12 +11,16 @@ export default function Home() {
       <WeDo />
       <div
         className="section py-5 h-[100vh] parallax w-[100vw]"
-        style={{ backgroundImage: `url("/images/general/para1.jpg")` }}
+        style={{
+          backgroundImage: `url("/images/general/para1.jpg") no-repeat center`,
+        }}
       ></div>
       <LocationComp />
       <div
         className="section py-5 h-[100vh] parallax w-[100vw]"
-        style={{ backgroundImage: `url("/images/general/para2.jpg")` }}
+        style={{
+          backgroundImage: `url("/images/general/para2.jpg") no-repeat center`,
+        }}
       ></div>
       <Testimonials />
     </main>
