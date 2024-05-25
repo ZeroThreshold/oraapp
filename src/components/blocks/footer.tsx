@@ -74,7 +74,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-400 transition hover:text-gray-400/75"
-                      href="#"
+                      href="https://www.speedshoporiginals.com/"
                     >
                       Speedshop originals
                     </a>
