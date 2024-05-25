@@ -88,11 +88,6 @@
   ::-webkit-scrollbar-thumb {
     background: transparent;
   }
-  @supports (-webkit-overflow-scrolling: touch) {
-    body * {
-      background-attachment: scroll;
-    }
-  }
 }
 
 .banner-car {
@@ -130,6 +125,14 @@
 }
 
 .parallax {
+  background: url("/images/general/para2.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.parallax1 {
+  background: url("/images/general/para1.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

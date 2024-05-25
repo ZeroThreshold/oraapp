@@ -9,9 +9,9 @@ export default function Home() {
     <main>
       <VideoPlayer />
       <WeDo />
-      <section className="section py-5 min-h-screen parallax w-[100vw] bg-[url('/images/general/para1.jpg')]"></section>
+      <section className="section py-5 min-h-screen parallax1 w-[100vw]"></section>
       <LocationComp />
-      <section className="section py-5 min-h-screen parallax w-[100vw] bg-[url('/images/general/para2.jpg')]"></section>
+      <section className="section py-5 min-h-screen parallax w-[100vw]"></section>
       <Testimonials />
     </main>
   );
