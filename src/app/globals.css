@@ -129,6 +129,10 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
+  @media screen and (max-width: 500px) {
+    background-attachment: scroll;
+  }
 }
 
 .parallax1 {
@@ -136,6 +140,10 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
+  @media screen and (max-width: 500px) {
+    background-attachment: scroll;
+  }
 }
 
 .list-arrow {
