@@ -386,23 +386,15 @@ export const locationsData = {
     bannerImage: "/images/general/para1.jpg",
     courses: {
       1: {
-        title: "Clinic Level 1: Explore Adventure Trails Clinic",
+        title: "Level 1: Flat track training - Gears Not Included",
         img: "/images/general/trials.jpeg",
         infoItems: [
           {
             question: "What i will learn?",
             listItem: true,
             info: [
-              "Body position - Seated & Standing riding postures for Off-road",
-              "Cornering techniques - loose grounds",
-              "Exercises to increase control and balance",
-              "Techniques to ride inclines and declines",
-              "Hill recovery",
-              "Technique to lift a fallen bike",
-              "Efficient braking drills",
-              "Practice session",
-              "Observation and feedback from trainers",
-              "Trail ride",
+              "Flat Track Riding Techniques",
+              "Customized Ronin Flat Tracker",
             ],
           },
           {
@@ -411,15 +403,14 @@ export const locationsData = {
             info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
           {
-            question:
-              "Which bike I can Bring? OR Suitable Bikes for this Program?",
-            listItem: false,
-            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
-          },
-          {
             question: "Inclusions",
             listItem: true,
-            info: ["Any professional questions or help."],
+            info: [
+              "Trainer",
+              "120 min flat track training session",
+              "Customized Ronin Flat Tracker (with fuel)",
+              "Access to all common areas",
+            ],
           },
           {
             question: "Exclusions",
@@ -429,14 +420,19 @@ export const locationsData = {
         ],
         batches: [
           {
-            title: "Half Day",
+            title: "Batch 1",
             times: [
               {
                 time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
                 active: true,
               },
+            ],
+          },
+          {
+            title: "Batch 2",
+            times: [
               {
-                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
                 active: true,
               },
             ],
@@ -444,34 +440,23 @@ export const locationsData = {
         ],
         pricelist: [
           {
-            title: "Private",
+            title: "Standard",
             prices: [
               {
-                price: 6500,
+                price: 2500,
                 duration: "Half Day",
                 minRiders: -1,
-                maxRiders: 4,
-              },
-            ],
-          },
-          {
-            title: "Group",
-            prices: [
-              {
-                price: 4500,
-                duration: "Half Day",
                 maxRiders: -1,
-                minRiders: 5,
               },
             ],
           },
         ],
         level: "Beginner",
         description:
-          "Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
+          "Flat Tracking, is a fun, emerging, and accessible form of motorcycling that is among the fastest-growing motorsports in the world. Total training session 3 hours, saddle time 120 mins, rest 60 mins will include - classroom session, breakfast & gear-up time.",
       },
       2: {
-        title: "Clinic Level 2: Adventure Learning Day Clinic",
+        title: "Level 1: Flat track training - Gears Included",
         img: "/images/general/learning.jpeg",
         level: "Intermediate",
         infoItems: [
@@ -479,19 +464,8 @@ export const locationsData = {
             question: "What i will learn?",
             listItem: true,
             info: [
-              "Exercises to increase control and balance",
-              "Intermediate level trail riding drill",
-              "Use of electronic aids on your bike",
-              "Obstacles - Level 2",
-              "Recap of Level 1",
-              "Power-sliding",
-              "Techniques to ride inclines and declines",
-              "Hill recovery",
-              "Technique to lift a fallen bike",
-              "Efficient braking drills",
-              "Practice session",
-              "Observation and feedback from trainers",
-              "Trail ride",
+              "Flat Track Riding Techniques",
+              "Customized Ronin Flat Tracker",
             ],
           },
           {
@@ -500,17 +474,13 @@ export const locationsData = {
             info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
           },
           {
-            question:
-              "Which bike I can Bring? OR Suitable Bikes for this Program?",
-            listItem: false,
-            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
-          },
-          {
             question: "Inclusions",
             listItem: true,
             info: [
-              "Free range of the track.",
-              "Any professional questions or help.",
+              "120 min flat track training session",
+              "Customized Ronin Flat Tracker (with fuel)",
+              "Access to all common areas",
+              "Safety Gear",
             ],
           },
           {
@@ -521,94 +491,19 @@ export const locationsData = {
         ],
         batches: [
           {
-            title: "Full Day",
-            times: [
-              {
-                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
-                active: true,
-              },
-            ],
-          },
-        ],
-        pricelist: [
-          {
-            title: "Private",
-            prices: [
-              {
-                price: 10500,
-                duration: "Full Day",
-                minRiders: -1,
-                maxRiders: 4,
-              },
-            ],
-          },
-          {
-            title: "Group",
-            prices: [
-              {
-                price: 8500,
-                duration: "Full Day",
-                maxRiders: -1,
-                minRiders: 5,
-              },
-            ],
-          },
-        ],
-        description:
-          "A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails",
-      },
-      4: {
-        title: "Flat track training",
-        img: "/images/general/trials.jpeg",
-        level: "Beginner",
-        infoItems: [
-          {
-            question: "What i will learn?",
-            listItem: true,
-            info: [
-              "Body position - Seated riding postures for sliding a bike",
-              "Exercises to increase throttle control & vision",
-              "Efficient braking drills to increase traction",
-              "Technique of sliding",
-              "Practice session",
-              "Observation & feedback from trainers",
-            ],
-          },
-          {
-            question: "Things to carry",
-            listItem: false,
-            info: "Riders carry their own safety gear which suits them best, Riding jackets & Pants, Helmets, Gloves, and Boots are compulsory, Knee, Elbow & Chest Guards are mandatory. Refillable water bottle or hydration bag.",
-          },
-          {
-            question:
-              "Which bike I can Bring? OR Suitable Bikes for this Program?",
-            listItem: false,
-            info: "KTM ADV250/390, BMW 310GS, Himalayan, Xpulse, Yezdi Jawa, Triumph ADV Bike, Honda Africa Twin BMW GS Series, Harley Davidson Pan America",
-          },
-          {
-            question: "Inclusions",
-            listItem: true,
-            info: [
-              "Free range of the track.",
-              "Any professional questions or help.",
-            ],
-          },
-          {
-            question: "Exclusions",
-            listItem: true,
-            info: ["Anything other than inclusions."],
-          },
-        ],
-        batches: [
-          {
-            title: "Half Day",
+            title: "Batch 1",
             times: [
               {
                 time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
                 active: true,
               },
+            ],
+          },
+          {
+            title: "Batch 2",
+            times: [
               {
-                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
+                time: "01:00 PM - 04:00 PM (Reporting Time 12:00 PM)",
                 active: true,
               },
             ],
@@ -616,24 +511,13 @@ export const locationsData = {
         ],
         pricelist: [
           {
-            title: "Private",
+            title: "Standard",
             prices: [
               {
-                price: 5500,
+                price: 3000,
                 duration: "Half Day",
                 minRiders: -1,
-                maxRiders: 4,
-              },
-            ],
-          },
-          {
-            title: "Group",
-            prices: [
-              {
-                price: 4500,
-                duration: "Half Day",
                 maxRiders: -1,
-                minRiders: 5,
               },
             ],
           },
