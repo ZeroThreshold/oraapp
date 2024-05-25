@@ -9,19 +9,9 @@ export default function Home() {
     <main>
       <VideoPlayer />
       <WeDo />
-      <div
-        className="section py-5 h-[100vh] parallax w-[100vw]"
-        style={{
-          backgroundImage: `url("/images/general/para1.jpg") no-repeat center`,
-        }}
-      ></div>
+      <section className="section py-5 h-[100vh] parallax w-[100vw] bg-[url('/images/general/para1.jpg')]"></section>
       <LocationComp />
-      <div
-        className="section py-5 h-[100vh] parallax w-[100vw]"
-        style={{
-          backgroundImage: `url("/images/general/para2.jpg") no-repeat center`,
-        }}
-      ></div>
+      <section className="section py-5 h-[100vh] parallax w-[100vw] bg-[url('/images/general/para2.jpg')]"></section>
       <Testimonials />
     </main>
   );
