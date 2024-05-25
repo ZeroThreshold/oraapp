@@ -88,6 +88,11 @@
   ::-webkit-scrollbar-thumb {
     background: transparent;
   }
+  @supports (-webkit-overflow-scrolling: touch) {
+    body * {
+      background-attachment: scroll;
+    }
+  }
 }
 
 .banner-car {
