@@ -79,7 +79,7 @@ const Footer = () => {
                       Speedshop originals
                     </a>
                   </li>
-
+                  {/* 
                   <li>
                     <a
                       className="text-gray-400 transition hover:text-gray-400/75"
@@ -87,7 +87,7 @@ const Footer = () => {
                     >
                       PowerTech Parts
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
