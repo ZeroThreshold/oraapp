@@ -48,7 +48,7 @@ export const navItems = [
       {
         name: "ProDirt Pune",
         description: "",
-        href: "/locations/prodirt-pune",
+        href: "/locations/prodirtadventure",
         icon: <Logo variant="prodirtblack" width={130} height={130} />,
       },
       {
