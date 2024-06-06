@@ -8,6 +8,20 @@ import Footer from "@/components/blocks/footer";
 export const metadata: Metadata = {
   title: "Off Road Academy",
   description: "Fast track your off-road driving skills",
+  openGraph: {
+    type: "website",
+    url: "https://offroadacademies.com",
+    title: "Off Road Academy",
+    description: "Fast track your off-road driving skills",
+    images: [
+      {
+        url: "https://offroadacademies.com/images/main-black.png",
+        width: 1200,
+        height: 630,
+        alt: "Off Road Academy",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
