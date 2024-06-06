@@ -1,5 +1,5 @@
 export const locationsData = {
-  prodirt_pune: {
+  prodirtadventure: {
     title: "ProDirt Adventure",
     active: true,
     address: "Pro Dirt Adventure, Andra Dam Rd, Rajpuri, Maharashtra 412106",

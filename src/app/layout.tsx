@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata, ResolvingMetadata } from "next";
 import "./globals.css";
 import Header from "@/components/blocks/header";
 // import Notice from "@/components/blocks/notice";
