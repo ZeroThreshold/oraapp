@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Fast track your off-road driving skills",
     images: [
       {
-        url: "https://offroadacademies.com/images/main-black.png",
+        url: "https://offroadacademies.com/images/logos/main-black.png",
         width: 1200,
         height: 630,
         alt: "Off Road Academy",
