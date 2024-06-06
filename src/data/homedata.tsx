@@ -35,9 +35,9 @@ export const whatWeDo = [
 
 export const homeLocations = [
   {
-    name: locationsData.prodirt_pune.title,
-    href: locationsData.prodirt_pune.href,
-    description: locationsData.prodirt_pune.description,
+    name: locationsData.prodirtadventure.title,
+    href: locationsData.prodirtadventure.href,
+    description: locationsData.prodirtadventure.description,
   },
   {
     name: locationsData.driftr_pune.title,

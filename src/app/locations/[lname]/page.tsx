@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { getLocationInfo } from "@/helpers/getLocationInfo";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function LocationsInfo({
   params,
@@ -16,8 +17,24 @@ export default function LocationsInfo({
   if (!locationData) return <FourOhFour />;
   if (!locationData.active) return <NotActiveLocation />;
 
+  const pageTitle = `About Us - ${locationData.title}`;
+  const pageDescription = locationData.description;
+  const pageImage = `https://oraprod.netlify.app${locationData.bannerImage}`;
+  const pageUrl = `https://oraprod.netlify.app/locations/${params.lname}`;
+
   return (
     <div className="my-12 container">
+      <Head>
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImage} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={pageImage} />
+      </Head>
       <div className="flex items-center justify-center">
         <Logo passString={locationData.varient} width={400} height={300} />
       </div>
