@@ -46,10 +46,6 @@ export const locationsData = {
                 time: "09:00 AM - 12:00 PM (Reporting Time 08:00 AM)",
                 active: true,
               },
-              {
-                time: "02:00 PM - 05:00 PM (Reporting Time 01:00 PM)",
-                active: true,
-              },
             ],
           },
           {
@@ -94,7 +90,7 @@ export const locationsData = {
         ],
         level: "Beginner",
         description:
-          "Geared towards beginners, this course covers essential skills such as body positioning, throttle control, braking, and obstacle negotiation. Get to know your bike by learning the riding techniques to take your machine Off-road. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
+          "Geared towards beginners, this self-paced course teaches essential off-road skills, including body positioning, throttle control, braking, and obstacle negotiation for safe use on gravel roads and trails.",
       },
       2: {
         title: "Intermediate Off-Road Clinic: Level 1",
@@ -106,14 +102,14 @@ export const locationsData = {
             info: [
               "Recap of/ Introduction Clinic",
               "Exercises to increase control and balance",
+              "Techniques to ride Inclines & Declines",
+              "Use of electronic aids on your bike",
               "Brake/Throttle/ Clutch Control",
               "Intermediate-level trail riding drill",
-              "Use of electronic aids on your bike",
-              "Obstacles - Level 2",
-              "Techniques to ride Inclines & Declines",
-              "Hill Recovery",
               "How to lift a fallen bike",
               "Efficient Braking Drills",
+              "Obstacles - Level 2",
+              "Hill Recovery",
               "Trail Ride",
               "Power-sliding (Optional if the coach feels you are ready)",
             ],
@@ -167,7 +163,7 @@ export const locationsData = {
         ],
         level: "Intermediate",
         description:
-          "These courses build upon foundational skills and introduce riders to more challenging terrain, inclines, declines, and technical maneuvers. A Day full of learning & riding to boost your confidence. An easy self-paced training program allowing you to use the bikes safely on gravel roads & trails.",
+          "These courses build on foundational skills, introducing challenging terrain, inclines, declines, and technical maneuvers. A full Day of self-paced training & riding to boost your confidence and teaches safe biking on gravel roads and trails.",
       },
       3: {
         title: "Open Practice Session",
@@ -198,15 +194,6 @@ export const locationsData = {
               },
             ],
           },
-          {
-            title: "Full Day",
-            times: [
-              {
-                time: "09:00 AM - 05:00 PM (Reporting Time 08:00 AM)",
-                active: true,
-              },
-            ],
-          },
         ],
         pricelist: [
           {
@@ -214,7 +201,7 @@ export const locationsData = {
             prices: [
               {
                 price: 3500,
-                duration: "Half/Full",
+                duration: "Half",
                 minRiders: -1,
                 maxRiders: -1,
               },
@@ -223,7 +210,7 @@ export const locationsData = {
         ],
         level: "Intermediate",
         description:
-          "Our Open Practice Sessions are designed for riders who are members, athletes, or those who have completed at least an introductory course with us anywhere in India. These sessions provide track time for riders to practice at their own pace in a supportive and controlled environment. Whether you're looking to refine your skills, prepare for an upcoming event, or simply enjoy some time on the track, our Open Practice Sessions offer the perfect opportunity.",
+          "Our Open Practice Sessions are designed for riders who are members, athletes, or those who have completed an introductory course with us anywhere in India. These sessions provide track time in a supportive and controlled environment allowing riders to refine skills, prepare for events, or simply enjoy the track at their own pace.",
       },
       4: {
         title: "Kids Clinic",
@@ -361,9 +348,46 @@ export const locationsData = {
             prices: [
               {
                 price: 10500,
-                duration: "Full Day",
+                duration: "Half Day",
                 minRiders: -1,
                 maxRiders: 4,
+              },
+            ],
+          },
+        ],
+        level: "PRO",
+        description:
+          "Learn The Art of Sliding a Motorcycle. This program is focused on the fundamentals of sliding a motorcycle in a controlled environment. The trainers break down the sliding technique and provide you with the knowledge that even experienced riders have yet to figure out",
+      },
+      6: {
+        title: "Adventure Membership",
+        img: "/images/general/advmem.jpg",
+        infoItems: [
+          {
+            question: "Things Covered:",
+            listItem: true,
+            info: [
+              "6 ride sessions",
+              "Free bike parking",
+              "Coach Accompany",
+              "Access to All tracks and trails",
+              "F&B 1 Meal per session",
+              "Duration 4 months",
+            ],
+          },
+        ],
+        batches: [],
+        pricelist: [
+          {
+            title: "Offer Price",
+            prices: [
+              {
+                price: 50400,
+                duration: "50,400 INR + 18% GST",
+                minRiders: -1,
+                maxRiders: -1,
+                special: true,
+                spdesc: <>Membership Value: 63,000 INR</>,
               },
             ],
           },

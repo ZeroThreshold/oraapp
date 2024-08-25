@@ -10,6 +10,8 @@ interface Ride {
   duration: string;
   maxRiders: number;
   minRiders: number;
+  special?: boolean;
+  spdesc?: any;
 }
 
 interface Pricing {
@@ -103,7 +105,10 @@ export default function LocationsInfo({
             </div>
             <div className="w-full max-w-[26rem] mt-10">
               <div className="rounded-md shadow border p-4 border-neutral-100 flex flex-col gap-6">
-                <BatchTimings batches={course.batches} />
+                {course.batches.length > 0 && (
+                  <BatchTimings batches={course.batches} />
+                )}
+
                 <PricingComp pricing={course.pricelist} />
               </div>
             </div>
@@ -147,25 +152,45 @@ const PricingComp = ({ pricing }: { pricing: Pricing[] }) => {
     <div>
       <h3 className="text-2xl font-[550]">Pricing</h3>
       {pricing.map((price, index) => {
+        let special = false;
         return (
           <div key={index}>
             <h4 className="text-base font-medium text-gray-500">
               {price.title}:
             </h4>
             <ul>
-              {price.prices.map((price, index) => (
-                <li className="mt-1 flex flex-col font-[550]" key={index}>
-                  <div className="flex">
-                    <Dot />
-                    <IndianRupee className="w-4" /> {price.price}/- per rider
-                    {price.maxRiders !== -1 &&
-                      `, Max: ${price.maxRiders} Riders`}
-                    {price.minRiders !== -1 &&
-                      `, Min: ${price.minRiders} Riders`}
-                  </div>
-                  <div className="ml-10">Duration: {price.duration}</div>
-                </li>
-              ))}
+              {price.prices.map((price, index) => {
+                let special = false;
+                if (price.special) {
+                  special = true;
+                }
+                return (
+                  <li className="mt-1 flex flex-col font-[550]" key={index}>
+                    <div className="flex">
+                      <Dot />
+                      {!special && (
+                        <>
+                          <IndianRupee className="w-4" /> {price.price}/- per
+                          rider
+                        </>
+                      )}
+                      {special && (
+                        <div className="flex flex-col">
+                          <div className="text-green-500">{price.duration}</div>
+                          <div>{price.spdesc}</div>
+                        </div>
+                      )}
+                      {price.maxRiders !== -1 &&
+                        `, Max: ${price.maxRiders} Riders`}
+                      {price.minRiders !== -1 &&
+                        `, Min: ${price.minRiders} Riders`}
+                    </div>
+                    {!special && (
+                      <div className="ml-10">Duration: {price.duration}</div>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         );
