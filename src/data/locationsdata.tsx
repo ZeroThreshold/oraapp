@@ -374,7 +374,7 @@ export const locationsData = {
       },
     },
     description:
-      "ProDirt Adventure is the go-to spot for Motorsport enthusiasts from all over Maharashtra offering the right technical terrain coupled with the immense beauty of the Maval region of Pune. The team specializes in 2-wheeler &amp; 4-wheeler off-road training on various terrains.",
+      "ProDirt Adventure isn't just a riding destination; it's your launchpad for off-road mastery. We are passionate about empowering riders across Maharashtra with the skills and confidence to conquer any terrain. Our commitment to off-road education shines through our diverse training programs for both two-wheelers and four-wheelers.",
   },
   driftr_pune: {
     title: "TVS DRIFT-R",
