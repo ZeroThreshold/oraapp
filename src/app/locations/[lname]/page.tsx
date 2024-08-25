@@ -58,21 +58,30 @@ export default function LocationsInfo({
         <div className="my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {courses.map((course, index) => (
             <div
-              className="rounded-md shadow-lg p-4 flex flex-col justify-between"
+              className="rounded-md shadow-lg flex flex-col justify-between"
               key={index}
             >
               <div>
-                <Image
-                  className="w-full rounded-md mb-4"
-                  src={course.img}
-                  alt={course.title}
-                  width={500}
-                  height={500}
-                />
-                <div className="font-bold text-xl mb-2">{course.title}</div>
-                <p className="text-gray-700 text-base">{course.description}</p>
+                <div className="w-full h-64 overflow-hidden rounded-t-md mb-4">
+                  <Image
+                    className="w-full h-full object-cover"
+                    src={course.img}
+                    alt={course.title}
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <div className="font-bold text-xl mb-2 px-4 py-2">
+                  {course.title}
+                </div>
+                <p className="text-gray-700 text-base px-4">
+                  {course.description}
+                </p>
               </div>
-              <Link href={`/locations/${params.lname}/${course.id}`}>
+              <Link
+                href={`/locations/${params.lname}/${course.id}`}
+                className="px-4 py-2 mb-3"
+              >
                 <Button className="gap-4 mt-4">Book Now</Button>
               </Link>
             </div>
