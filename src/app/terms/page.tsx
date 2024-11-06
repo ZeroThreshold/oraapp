@@ -93,9 +93,9 @@ export default function Terms() {
                 operating our Platform.
               </li>
               <li>
-                “Us”, “Our,” and “We” refers to Mr. Nilesh Dhumal, the Owner of
-                the brand “OFFROADACADEMIES” operating this Platform, along with
-                their affiliates.
+                “Us”, “Our,” and “We” refers to Mr. Nilesh NANASAHEB Dhumal, the
+                Owner of the brand “OFFROADACADEMIES” operating this Platform,
+                along with their affiliates.
               </li>
               <li>
                 “You,” “Yours,” “Users,” or “User” signifies any natural or
