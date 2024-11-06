@@ -38,9 +38,11 @@ export default function Policy() {
                   href="mailto:sales@offroadacademies.com"
                   className="text-blue-500"
                 >
+                  {" "}
                   sales@offroadacademies.com
-                </a>
-                , and our team will guide you through the process.{" "}
+                </a>{" "}
+                or call us at +91-9945011116, and our team will guide you
+                through the process.{" "}
               </li>
               <li>
                 Return Timeline: Products must be returned within 2-3 days from
@@ -53,6 +55,7 @@ export default function Policy() {
                   href="mailto:sales@offroadacademies.com"
                   className="text-blue-500"
                 >
+                  {" "}
                   sales@offroadacademies.com
                 </a>
                 , and we’ll assist you promptly.
@@ -77,10 +80,11 @@ export default function Policy() {
                   href="mailto:sales@offroadacademies.com"
                   className="text-blue-500"
                 >
+                  {" "}
                   sales@offroadacademies.com
-                </a>
-                . Our team will review your request and guide you through the
-                process.
+                </a>{" "}
+                or call us at +91-9945011116. Our team will review your request
+                and guide you through the process.
               </li>
               <li>
                 <strong>Refund Timeline:</strong> Refunds are processed within
@@ -94,6 +98,7 @@ export default function Policy() {
                   href="mailto:sales@offroadacademies.com"
                   className="text-blue-500"
                 >
+                  {" "}
                   sales@offroadacademies.com
                 </a>
                 . Our team will assist you promptly.
@@ -120,9 +125,11 @@ export default function Policy() {
                   href="mailto:sales@offroadacademies.com"
                   className="text-blue-500"
                 >
+                  {" "}
                   sales@offroadacademies.com
-                </a>
-                . Our team will assist you with the cancellation procedure.
+                </a>{" "}
+                or call us at +91-9945011116 . Our team will assist you with the
+                cancellation procedure.
               </li>
               <li>
                 <strong>Refund Timeline:</strong> If eligible, refunds for
