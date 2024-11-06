@@ -19,6 +19,10 @@ const Footer = () => {
                 brands like Hero, Royal Enfield, KTM, BMW Motorrad, and more.
                 Expertise in track & route curation and motorsport events.
               </p>
+              <p className="mt-4 font-medium text-center text-gray-300 lg:text-left lg:text-base">
+                <strong>Address:</strong> #64, 9th Main, 14th Cross, Indiranagar
+                2nd Stage, Eshwara layout, Bangalore - 560038.
+              </p>
 
               <div className="mt-6 flex flex-col lg:flex-row justify-center gap-4 items-center lg:items-start lg:justify-start">
                 <Instagram />
@@ -68,30 +72,6 @@ const Footer = () => {
 
             <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
               <div>
-                <strong className="font-semibold text-white"> Shops </strong>
-
-                <ul className="mt-6 space-y-1">
-                  <li>
-                    <a
-                      className="text-gray-400 transition hover:text-gray-400/75"
-                      href="https://www.speedshoporiginals.com/"
-                    >
-                      Speedshop originals
-                    </a>
-                  </li>
-                  {/* 
-                  <li>
-                    <a
-                      className="text-gray-400 transition hover:text-gray-400/75"
-                      href="#"
-                    >
-                      PowerTech Parts
-                    </a>
-                  </li> */}
-                </ul>
-              </div>
-
-              <div>
                 <strong className="font-semibold text-white">Links</strong>
 
                 <ul className="mt-6 space-y-1">
@@ -134,6 +114,22 @@ const Footer = () => {
                       href="/privacy"
                     >
                       Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-gray-400 transition hover:text-gray-400/75"
+                      href="/terms"
+                    >
+                      Terms and Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-gray-400 transition hover:text-gray-400/75"
+                      href="/policy"
+                    >
+                      Other Policies
                     </Link>
                   </li>
                 </ul>
