@@ -9,6 +9,7 @@ export default function Terms() {
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
           <h1 className="text-3xl font-bold mb-4">Terms And Conditions</h1>
           <div>
+            <p>This terms are effective from November 6th, 2024</p>
             <h2 className="text-2xl font-bold mt-8 mb-4">Terms of use</h2>
             <ul className="list-disc pl-8 mb-4">
               <li>

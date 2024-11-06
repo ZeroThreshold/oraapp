@@ -16,6 +16,11 @@ export const navItems = [
     href: "/events",
     items: false,
   },
+  {
+    name: "Contact Us",
+    href: "/contact-us",
+    items: false,
+  },
   // {
   //   name: "Shop",
   //   href: "/shop",
