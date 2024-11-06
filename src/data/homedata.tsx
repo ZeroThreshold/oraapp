@@ -44,9 +44,9 @@ export const homeLocations = [
     href: locationsData.driftr_pune.href,
     description: locationsData.driftr_pune.description,
   },
-  {
-    name: locationsData.mototrip_goa.title,
-    href: locationsData.mototrip_goa.href,
-    description: locationsData.mototrip_goa.description,
-  },
+  // {
+  //   name: locationsData.mototrip_goa.title,
+  //   href: locationsData.mototrip_goa.href,
+  //   description: locationsData.mototrip_goa.description,
+  // },
 ];
