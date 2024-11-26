@@ -59,7 +59,7 @@ export const navItems = [
       {
         name: "Drift-R School Pune",
         description: "",
-        href: "/locations/driftr-pune",
+        href: "https://tvs-driftr.offroadacademies.com/",
         icon: <Logo variant="driftrblack" width={130} height={130} />,
       },
       // {
